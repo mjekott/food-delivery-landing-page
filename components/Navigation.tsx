@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <>
       <button
-        className="fixed top-6 right-6 bg-orange-600 rounded-full p-2 text-white"
+        className="fixed top-6 z-30 right-6 bg-orange-600 rounded-full p-2 text-white"
         onClick={toggleNav}
       >
         <svg
@@ -27,9 +27,9 @@ const Navigation = () => {
         </svg>
       </button>
       <nav
-        className={`fixed top-0 z-30 h-full w-full ${
+        className={`fixed top-0 z-40 h-full w-full ${
           showNav ? "right-0" : "-right-full"
-        } bg-black/40 transition-all duration-300 `}
+        } bg-black/40 transition-all duration-300  `}
       >
         <div className="absolute top-0 right-0 w-full sm:w-6/12 lg:w-4/12 xl:w-3/12 h-full bg-orange-50 flex items-center">
           <button

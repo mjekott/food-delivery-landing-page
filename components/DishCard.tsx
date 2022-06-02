@@ -47,8 +47,8 @@ const DishCard: FC<Dish> = ({
             {rating}
           </p>
           <Rating size={25} ratingValue={rating * 20} readonly />
-          <p className=" mr-1 text-base text-orange-600 mt-1 font-bold ml-1">
-            {totalReviews}
+          <p className=" mr-1 text-base text-gray-400 mt-1 font-bold ml-1">
+            ( {totalReviews})
           </p>
         </div>
         <div className="mt-1 flex justify-between">

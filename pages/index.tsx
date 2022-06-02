@@ -6,6 +6,7 @@ import CategoryList from "../components/Categories";
 import DishList from "../components/DishList";
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
+import PricingContainer from "../container/PricingContainer";
 import CategoryContainer from "../container/RowContainer";
 
 const Home: NextPage = () => {
@@ -14,10 +15,11 @@ const Home: NextPage = () => {
       <Head>
         <title>Cafeterio</title>
       </Head>
+      <Navigation />
       <Header />
       <CategoryList />
       <DishList />
-      <Navigation />
+      <PricingContainer />
     </div>
   );
 };
