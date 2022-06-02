@@ -1,5 +1,33 @@
 import React from "react";
+import TestimonialCard from "../components/TestimonialCard";
 import TestimonialImages from "./TestimonialImages";
+
+const temtimonials = [
+  {
+    name: "Kebe Eyong",
+    image: "/images/customer-list/user-1.jpg",
+    username: "keyong",
+    note: "I recently switched my online meal ordering platform from a big company that was taking 13% of every order to your free online ordering platform. I am VERY PLEASED with your service",
+  },
+  {
+    name: "Filip andress",
+    username: "sandress",
+    image: "/images/customer-list/user-2.jpg",
+    note: "I have been using Caferio for 3 years, the service is great and the food is very tasty, so that's why Caferio is my favorite ",
+  },
+  {
+    name: "ALex white",
+    username: "awhite",
+    image: "/images/customer-list/user-3.jpg",
+    note: "When I received my first food order from Caferio and the food I ate, the food was great and I have been a fan of Caferio ever since.",
+  },
+  {
+    name: "Javed ali",
+    username: "javedali",
+    image: "/images/customer-list/user-4.jpg",
+    note: "Yesterday I ordered food for my party from Caferio. The guests appreciate the food, they said from where you have ordered the food? I told them, Caferio.",
+  },
+];
 
 function TestimonialContainer() {
   return (
@@ -10,106 +38,9 @@ function TestimonialContainer() {
       </p>
       <div className="grid grid-cols-3 gap-5  mt-10">
         <div className="lg:col-span-2 col-span-3 grid grid-cols-2 gap-5">
-          <div className="flex flex-col col-span-2 md:col-span-1">
-            <div className="flex gap-3 items-center">
-              <div className="rounded-full overflow-hidden w-[60px] h-[60px]">
-                <img
-                  src="/images/customer-list/user-1.jpg"
-                  alt=""
-                  className="image-cover"
-                />
-              </div>
-              <div>
-                <p className="capitalize font-medium text-slate-600  text-sm  ">
-                  Kebe Eyong
-                </p>
-                <span className="text-xs text-orange-600 font-medium block ">
-                  @eyong
-                </span>
-              </div>
-            </div>
-            <div className="text-base text-gray-600 leading-[28px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam sapiente debitis porro sed nihil iure, impedit officiis
-              esse necessitatibus explicabo officia eius corporis ipsam. Facilis
-              sapiente numquam voluptatibus non quas.
-            </div>
-          </div>
-          <div className="flex flex-col col-span-2 md:col-span-1">
-            <div className="flex gap-3 items-center">
-              <div className="rounded-full overflow-hidden w-[60px] h-[60px]">
-                <img
-                  src="/images/customer-list/user-1.jpg"
-                  alt=""
-                  className="image-cover"
-                />
-              </div>
-              <div>
-                <p className="capitalize font-medium text-slate-600  text-sm  ">
-                  Kebe Eyong
-                </p>
-                <span className="text-xs text-orange-600 font-medium block ">
-                  @eyong
-                </span>
-              </div>
-            </div>
-            <div className="text-base text-gray-600 leading-[28px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam sapiente debitis porro sed nihil iure, impedit officiis
-              esse necessitatibus explicabo officia eius corporis ipsam. Facilis
-              sapiente numquam voluptatibus non quas.
-            </div>
-          </div>
-          <div className="flex flex-col col-span-2 md:col-span-1">
-            <div className="flex gap-3 items-center">
-              <div className="rounded-full overflow-hidden w-[60px] h-[60px]">
-                <img
-                  src="/images/customer-list/user-1.jpg"
-                  alt=""
-                  className="image-cover"
-                />
-              </div>
-              <div>
-                <p className="capitalize font-medium text-slate-600  text-sm  ">
-                  Kebe Eyong
-                </p>
-                <span className="text-xs text-orange-600 font-medium block ">
-                  @eyong
-                </span>
-              </div>
-            </div>
-            <div className="text-base text-gray-600 leading-[28px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam sapiente debitis porro sed nihil iure, impedit officiis
-              esse necessitatibus explicabo officia eius corporis ipsam. Facilis
-              sapiente numquam voluptatibus non quas.
-            </div>
-          </div>
-          <div className="flex flex-col col-span-2 md:col-span-1">
-            <div className="flex gap-3 items-center">
-              <div className="rounded-full overflow-hidden w-[60px] h-[60px]">
-                <img
-                  src="/images/customer-list/user-1.jpg"
-                  alt=""
-                  className="image-cover"
-                />
-              </div>
-              <div>
-                <p className="capitalize font-medium text-slate-600  text-sm  ">
-                  Kebe Eyong
-                </p>
-                <span className="text-xs text-orange-600 font-medium block ">
-                  @eyong
-                </span>
-              </div>
-            </div>
-            <div className="text-base text-gray-600 leading-[28px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam sapiente debitis porro sed nihil iure, impedit officiis
-              esse necessitatibus explicabo officia eius corporis ipsam. Facilis
-              sapiente numquam voluptatibus non quas.
-            </div>
-          </div>
+          {temtimonials.map((item, key) => (
+            <TestimonialCard key={key} {...item} />
+          ))}
         </div>
         <TestimonialImages />
       </div>

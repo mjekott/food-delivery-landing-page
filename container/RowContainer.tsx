@@ -12,7 +12,7 @@ const RowContainer: FC<Props> = ({ title, children }) => {
     <section className="container my-10">
       <h2 className="heading">{title}</h2>
 
-      <div className="flex flex-wrap -ml-3">{children}</div>
+      <div className="grid grid-cols-4 gap-4 -ml-3">{children}</div>
     </section>
   );
 };

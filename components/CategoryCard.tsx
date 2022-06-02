@@ -9,7 +9,7 @@ type Props = {
 
 const CategoryCard: FC<Props> = ({ src, name, link }) => {
   return (
-    <div className="w-full sm:w-6/12 md:w-4/12 lg:w-3/12 xl:w-[20%] p-3">
+    <div className="w-full p-3">
       <Link href={link}>
         <div className="block w-full h-[140px] sm:h-[120px] cursor-pointer overflow-hidden rounded-md relative group">
           <img src={src} alt={name} className="w-full h-full object-cover" />

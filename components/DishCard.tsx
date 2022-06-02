@@ -23,10 +23,10 @@ const DishCard: FC<Dish> = ({
   image,
 }) => {
   return (
-    <div className="w-full rounded-tl-2xl rounded-tr-2xl overflow-hidden sm:w-6/12 md:w-4/12 lg:w-3/12 xl:w-[20%] mt-3 mg:mt-0 md:mr-3">
+    <div className="w-full rounded-tl-2xl rounded-tr-2xl overflow-hidden ">
       <div className="overflow-hidden h-[190px] w-full relative">
-        <img src={image} alt={name} className="image-cover" />
-        <div className="absolute inset-0 bg-black/50">
+        <img src={image} alt={name} className="image-cover " />
+        <div className="absolute  inset-0 bg-black/50">
           <p
             className={`absolute top-4 right-4 rounded-full text-white ${
               feature === "best selling" ? "bg-orange-800" : "bg-green-600"

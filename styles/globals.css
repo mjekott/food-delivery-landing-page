@@ -18,3 +18,8 @@
 svg.star-svg {
   display: inline;
 }
+
+.no-scroll {
+  height: 100vh !important;
+  overflow: hidden !important;
+}

@@ -42,7 +42,7 @@ const PricingCard: FC<Pricing> = ({
         <p className="text-base text-gray-700 text-center">{subtitle}</p>
         <ul className="mt-5 flex flex-col space-y-3">
           {feature.map((item, key) => (
-            <li className="flex">
+            <li className="flex" key={key}>
               <div className=" text-orange-500 rounded-full mr-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

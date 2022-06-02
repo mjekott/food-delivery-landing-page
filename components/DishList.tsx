@@ -43,6 +43,26 @@ const dishes: Dish[] = [
     rating: 3.5,
     totalReviews: 1500,
   },
+  {
+    id: 5,
+    image: "/images/dishes/egg-papaya.jpg",
+    name: "pizza",
+    price: 10.0,
+    discount: 13.0,
+    feature: "best selling",
+    rating: 3.5,
+    totalReviews: 1500,
+  },
+  {
+    id: 6,
+    image: "/images/dishes/hot-chicken.jpg",
+    name: "pizza",
+    price: 10.0,
+    discount: 13.0,
+    feature: "best selling",
+    rating: 3.5,
+    totalReviews: 1500,
+  },
 ];
 
 const DishList = () => {

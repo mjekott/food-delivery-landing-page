@@ -32,8 +32,8 @@ const PricingContainer = () => {
     <section className="container py-20 pb-10">
       <h2 className="heading text-center mb-10">pricing</h2>
       <div className="flex flex-wrap justify-center gap-10">
-        {pricing.map((item, key) => (
-          <PricingCard key={key} {...item} />
+        {pricing.map((item, index) => (
+          <PricingCard key={index} {...item} />
         ))}
       </div>
     </section>

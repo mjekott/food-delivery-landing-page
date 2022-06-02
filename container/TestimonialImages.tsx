@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import LighthosePreview from "./LighthosePreview";
 
 const images = [
   "/images/testimonials/1.jpg",
@@ -13,7 +14,7 @@ const images = [
 ];
 
 const TestimonialImages = () => {
-  const [currentImage, setCurrentImage] = useState<string | null>(null);
+  const [currentImage, setCurrentImage] = useState<string>("");
   return (
     <div className="col-span-3 lg:col-span-1 gap-5 grid grid-cols-3 md:grid-cols-6 lg:grid-cols-3 ">
       {images.map((item, key) => (
@@ -30,19 +31,10 @@ const TestimonialImages = () => {
         </div>
       ))}
 
-      {currentImage && (
-        <div
-          className={`fixed inset-0 bg-black/80 h-full  z-40 flex items-center justify-center transition-all duration-300`}
-          onClick={() => setCurrentImage(null)}
-        >
-          <div
-            className={`bg-white w-[400px] max-h-[400px] h-full transition-all duration-200 overflow-hidden `}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img src={currentImage || ""} className="imgage-cover" />
-          </div>
-        </div>
-      )}
+      <LighthosePreview
+        image={currentImage}
+        onClick={() => setCurrentImage("")}
+      />
     </div>
   );
 };
