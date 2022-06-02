@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FC } from "react";
 
 const customerList = [
   "/images/customer-list/user-1.jpg",
@@ -14,11 +14,7 @@ const Header = () => {
     <header>
       <div className="container relative">
         <div className="absolute top-6 left-4 w-auto h-[40px]">
-          <img
-            src="/images/logo.png"
-            alt=""
-            className="w-full h-full object-cover"
-          />
+          <img src="/images/logo.png" alt="" className="image-cover" />
         </div>
         <div className="flex flex-wrap items-center pt-28 xl:pt-20">
           <div className="w-full  md:w-6/12 ">
@@ -46,7 +42,7 @@ const Header = () => {
                     <img
                       src={item}
                       alt="customer-images"
-                      className="w-full h-full object-cover"
+                      className="image-cover"
                     />
                   </li>
                 ))}
@@ -57,11 +53,7 @@ const Header = () => {
             </div>
           </div>
           <div className="hidden md:block md:w-6/12">
-            <img
-              src="/images/foods.png"
-              alt=""
-              className="w-full h-auto object-cover"
-            />
+            <img src="/images/foods.png" alt="" className="image-cover" />
           </div>
         </div>
       </div>
