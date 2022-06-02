@@ -6,6 +6,7 @@ import CategoryList from "../components/Categories";
 import DishList from "../components/DishList";
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
+import DownloadContainer from "../container/DownloadContainer";
 import PricingContainer from "../container/PricingContainer";
 import CategoryContainer from "../container/RowContainer";
 import TestimonialContainer from "../container/TestimonialContainer";
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <DishList />
       <PricingContainer />
       <TestimonialContainer />
+      <DownloadContainer />
     </div>
   );
 };
