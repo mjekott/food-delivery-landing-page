@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Navigation from "../components/Navigation";
 import PricingContainer from "../container/PricingContainer";
 import CategoryContainer from "../container/RowContainer";
+import TestimonialContainer from "../container/TestimonialContainer";
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <CategoryList />
       <DishList />
       <PricingContainer />
+      <TestimonialContainer />
     </div>
   );
 };
