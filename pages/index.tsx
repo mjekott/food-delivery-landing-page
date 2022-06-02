@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useCallback, useState } from "react";
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
+import CategoryContainer from "../container/CategoryContainer";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
         <title>Cafeterio</title>
       </Head>
       <Header />
+      <CategoryContainer />
       <Navigation />
     </div>
   );

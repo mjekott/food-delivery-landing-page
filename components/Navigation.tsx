@@ -27,7 +27,7 @@ const Navigation = () => {
         </svg>
       </button>
       <nav
-        className={`fixed top-0 z-10 h-full w-full ${
+        className={`fixed top-0 z-30 h-full w-full ${
           showNav ? "right-0" : "-right-full"
         } bg-black/40 transition-all duration-300 `}
       >
