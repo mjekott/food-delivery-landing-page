@@ -31,7 +31,10 @@ const temtimonials = [
 
 function TestimonialContainer() {
   return (
-    <section className="py-20 container bg-gradient-to-b from-orange-50/70 to-transparent">
+    <section
+      id="testimonials"
+      className="py-20 container bg-gradient-to-b from-orange-50/70 to-transparent"
+    >
       <h2 className="heading ">Testimonial</h2>
       <p className="text-gray-900 font-semibold text-3xl w-full md:w-7/12 lg:w-6/12">
         Caferio is a trusted brand,because we have happy customers

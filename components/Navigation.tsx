@@ -1,9 +1,23 @@
 import Link from "next/link";
-import React, { FC, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
+
+const navvlinks = [
+  { name: "home", link: "/#" },
+  { name: "categories", link: "/#categories" },
+  { name: "dishes", link: "/#dishes" },
+  { name: "testimonials", link: "/#testimonials" },
+  { name: "downloads", link: "/#downloads" },
+];
 
 const Navigation = () => {
   const [showNav, setShowNav] = useState(false);
   const toggleNav = () => setShowNav((prev) => !prev);
+
+  useEffect(() => {
+    showNav
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "");
+  }, [showNav]);
 
   return (
     <>
@@ -52,24 +66,15 @@ const Navigation = () => {
             </svg>
           </button>
           <ul className="w-full">
-            <li className="block px-4 py-3 w-full text-orange-800 capitalize text-base hover:bg-orange-700 hover:pl-6 transition-all duration-300">
-              <Link href="/">home</Link>
-            </li>
-            <li className="block px-4 py-3 w-full text-orange-800 capitalize text-base hover:bg-orange-700 hover:pl-6 transition-all duration-300">
-              <Link href="/categories">categories</Link>
-            </li>
-            <li className="block px-4 py-3 w-full text-orange-800 capitalize text-base hover:bg-orange-700 hover:pl-6 transition-all duration-300">
-              <Link href="/recipies">recipes</Link>
-            </li>
-            <li className="block px-4 py-3 w-full text-orange-800 capitalize text-base hover:bg-orange-700 hover:pl-6 transition-all duration-300">
-              <Link href="/">pricing</Link>
-            </li>
-            <li className="block px-4 py-3 w-full text-orange-800 capitalize text-base hover:bg-orange-700 hover:pl-6 transition-all duration-300">
-              <Link href="/">testimonials</Link>
-            </li>
-            <li className="block px-4 py-3 w-full text-orange-800 capitalize text-base hover:bg-orange-700 hover:pl-6 transition-all duration-300">
-              <Link href="/">download app</Link>
-            </li>
+            {navvlinks.map((item, key) => (
+              <li
+                key={key}
+                onClick={toggleNav}
+                className="block px-4 py-3 w-full text-orange-800 capitalize text-base hover:bg-orange-700 hover:pl-6 transition-all duration-300"
+              >
+                <Link href={item.link}>{item.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>

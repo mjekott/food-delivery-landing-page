@@ -23,3 +23,7 @@ svg.star-svg {
   height: 100vh !important;
   overflow: hidden !important;
 }
+
+body {
+  scroll-behavior: smooth;
+}

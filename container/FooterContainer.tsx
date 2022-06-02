@@ -28,23 +28,23 @@ const footerlinks = [
     links: [
       {
         name: "categories",
-        href: "/#",
+        href: "/#categories",
       },
       {
         name: "dishes",
-        href: "/#",
+        href: "/#dishes",
       },
       {
         name: "pricing",
-        href: "/#",
+        href: "/#pricing",
       },
       {
         name: "testimonials",
-        href: "/#",
+        href: "/#testimonials",
       },
       {
         name: "download app",
-        href: "/#",
+        href: "/#downloads",
       },
     ],
   },
@@ -90,7 +90,7 @@ const footerlinks = [
 
 const FooterContainer = () => {
   return (
-    <section className="footer py-20">
+    <section id="footer" className="footer py-20">
       <div className="grid grid-cols-3 gap-5 container">
         <div className="col-span-3 lg:col-span-1">
           <div className="w-24">

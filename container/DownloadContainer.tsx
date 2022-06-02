@@ -2,7 +2,10 @@ import React from "react";
 
 const DownloadContainer = () => {
   return (
-    <section className="bg-[url('/images/download/app-bg.png')] w-full h-[450px] bg-cover bg-no-repeat ">
+    <section
+      id="downloads"
+      className="bg-[url('/images/download/app-bg.png')] w-full h-[450px] bg-cover bg-no-repeat "
+    >
       <div className="flex justify-center flex-col items-start container h-full">
         <h2 className="heading">download</h2>
         <h2 className="text-3xl font-bold mb-5">

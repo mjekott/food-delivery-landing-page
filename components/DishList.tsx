@@ -67,7 +67,7 @@ const dishes: Dish[] = [
 
 const DishList = () => {
   return (
-    <RowContainer title="popular dishes">
+    <RowContainer id="dishes" title="popular dishes">
       {dishes.map((item, index) => (
         <DishCard key={index} {...item} />
       ))}

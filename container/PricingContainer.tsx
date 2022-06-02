@@ -29,7 +29,7 @@ const pricing: Pricing[] = [
 
 const PricingContainer = () => {
   return (
-    <section className="container py-20 pb-10">
+    <section id="pricing" className="container py-20 pb-10">
       <h2 className="heading text-center mb-10">pricing</h2>
       <div className="flex flex-wrap justify-center gap-10">
         {pricing.map((item, index) => (

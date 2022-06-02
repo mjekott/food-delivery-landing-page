@@ -65,7 +65,7 @@ const PricingCard: FC<Pricing> = ({
                   )}
                 </svg>
               </div>
-              <p className="capitalize text-gray-700">1 meal per day</p>
+              <p className="capitalize text-gray-700">{item.name}</p>
             </li>
           ))}
         </ul>

@@ -42,7 +42,7 @@ const categories = [
 
 const CategoryList = () => {
   return (
-    <RowContainer title="categories">
+    <RowContainer title="categories" id="categories">
       {categories.map((item, key) => (
         <CategoryCard key={key} {...item} />
       ))}
