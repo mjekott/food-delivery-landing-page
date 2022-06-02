@@ -2,9 +2,11 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import { useCallback, useState } from "react";
+import CategoryList from "../components/Categories";
+import DishList from "../components/DishList";
 import Header from "../components/Header";
 import Navigation from "../components/Navigation";
-import CategoryContainer from "../container/CategoryContainer";
+import CategoryContainer from "../container/RowContainer";
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +15,8 @@ const Home: NextPage = () => {
         <title>Cafeterio</title>
       </Head>
       <Header />
-      <CategoryContainer />
+      <CategoryList />
+      <DishList />
       <Navigation />
     </div>
   );

@@ -1,6 +1,6 @@
-import Link from "next/link";
 import React from "react";
-import CategoryCard from "../components/CategoryCard";
+import RowContainer from "../container/RowContainer";
+import CategoryCard from "./CategoryCard";
 
 const categories = [
   {
@@ -40,18 +40,14 @@ const categories = [
   },
 ];
 
-const CategoryContainer = () => {
+const CategoryList = () => {
   return (
-    <section className="container my-10">
-      <h2 className="heading">Categories</h2>
-
-      <div className="flex flex-wrap -ml-3">
-        {categories.map((item, key) => (
-          <CategoryCard key={key} {...item} />
-        ))}
-      </div>
-    </section>
+    <RowContainer title="categories">
+      {categories.map((item, key) => (
+        <CategoryCard key={key} {...item} />
+      ))}
+    </RowContainer>
   );
 };
 
-export default CategoryContainer;
+export default CategoryList;
