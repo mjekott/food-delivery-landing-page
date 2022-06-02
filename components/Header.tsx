@@ -12,9 +12,16 @@ const customerList = [
 const Header = () => {
   return (
     <header>
-      <div className="container">
+      <div className="container relative">
+        <div className="absolute top-6 left-4 w-auto h-[40px]">
+          <img
+            src="/images/logo.png"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className="flex flex-wrap items-center pt-28 xl:pt-20">
-          <div className="w-full  md:w-6/12">
+          <div className="w-full  md:w-6/12 ">
             <h4 className="text-xs uppercase font-medium bg-amber-100 px-3 py-2 rounded-3xl inline-block text-orange-800">
               drink, food & enjoy
             </h4>
